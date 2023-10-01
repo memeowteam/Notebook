@@ -1,5 +1,5 @@
-# Memeow-eBook
-Nothing, just Mike and Johnny Dang
+# Embedded Notebook
+Nothing, just Mike and Johnny
 # Table of contents
 
 - [Table of contents](#table-of-contents)
