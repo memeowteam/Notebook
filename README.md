@@ -4,21 +4,28 @@ Nothing, just Mike and Johnny
 - [Table of contents](#table-of-contents)
 - [About us](/about-us/about-us.md)
 - [Introduce](#introduce)
-- [1. C/C++](#1-cc)
+- [1. C](#1-c)
   - [1.1. C keywords](#11-c-keywords)
   - [1.2. Variables declaration](#12-variables-declaration)
-  - [1.3. Memory layout](#13-memory-layout)
+  - [1.3. Memory Layout](#13-memory-layout)
   - [1.4. Volatile keyword](#14-volatile-keyword)
   - [1.5. Pointer](#15-pointer)
   - [1.6. Function pointer](#16-function-pointer)
   - [1.7. Struct & Union & Enum](#17-struct--union--enum)
   - [1.8. Extern & Static](#18-extern--static)
+  - [1.9. Compilation Model](#19-compilation-model)
+  - [1.10. Linker & Loader](#110-linker--loader)
+  - [1.11. Function Invoker](#111-function-invoker)
+  - [1.12. Inline Function](#112-inline-function)
+- [C++](C++/C++.md)
+- [Python](Python/Python.md)
 - [2. Computer Architect](#2-computer-architect)
   - [2.1. Von Neumann & Harvard](#21-von-neumann--harvard)
   - [2.2. Little endian & Big endian](#22-little-endian--big-endian)
 - [3. Embedded](#3-embedded)
 - [4. Operating System](#4-operating-system)
 - [5. RTOS](#5-rtos)
+- [Robot Operating System](ROS/ROS.md)
 - [6. Linux Embedded](#6-linux-embedded)
 - [Available soon](#undistributed)
 <!-- 
@@ -32,7 +39,7 @@ Nothing, just Mike and Johnny
   - [Interrupt](#interrupt)
   - [ADC & DAC](#adc--dac)
   - [PWM](#pwm)
-  - [UART](#uart)
+  - [USART](#usart)
   - [I2C](#i2c)
   - [SPI](#spi)
   - [CAN](#can)
@@ -41,10 +48,14 @@ Nothing, just Mike and Johnny
   - [MQTT](#mqtt)
 -->
 # Introduce
-Some words about this notebook: because two people are contributing to this notebook, there are differences in styles \
+Some words about this notebook: 
+## Because two people are contributing to this notebook, there are differences in styles 
 **Mike's articles** written as if you have already known the basic and the knowledge only remind but not clearly for you to understand from zero
-# 1. C/C++
-
+## Some huge parts will be separated to another files
+**C++** \
+**Python** \
+**Robot Operating System** \
+# 1. C
 ## 1.1. C keywords
 |           |           |           |           |
 | :---:     | :---:     |  :---:    | :---:     |
@@ -56,21 +67,18 @@ Some words about this notebook: because two people are contributing to this note
 | do	      | if	      | static	  | while     |
 | default	  | goto	    | sizeof	  | volatile  |
 | const	    | float	    | short	    | unsigned  |
-
 ## 1.2. Variables declaration
 type-qualifier(s) type-modifier data-type variable-name = initial-value; \
 `type-qualifier`: *const*, *volatile*, *restrict* \
 `type-modifier`: *short*, *long*, *unsigned*, *signed* \
 `data-type`: *interger*(int), *floating point*(double, float), *enumerated*, *derived*, *void* 
-
-## 1.3. Memory layout
+## 1.3. Memory Layout
 **Memory layout** from low to high addresses in C includes: 
 * **text segment** (code segment): executable instructions - sharable & read-only
 * **initialized data**: global variables, static variables initialized (declared $\neq$ 0)
 * **uninitialized data**: global variables, static variables uninitialized or initialized to 0
 * **heap**: dynamic memory allocation (forget deallocation cause **Memory leak**)
 * **stack**: automatic variable storage, function frame (runout of *stack memory* cause **Stack overflow**)
-
 ## 1.4. Volatile keyword
 **volatile**: used to indicate to the compiler that a variable's value may change unexpectedly \
 *volatile* is usually used when you turn on compiler's optimization function 
@@ -79,17 +87,14 @@ type-qualifier(s) type-modifier data-type variable-name = initial-value; \
 * Multi-thread applications
 
 **const volatile**: same as volatile but you can't change its value by the code
-
 ## 1.5. Pointer:
 **pointer** is variables that hold address \
 *pointer* point to any type have same size \
 In C, we don't have reference parameter so we can use *pointer* to subtitute
-
 ## 1.6. Function pointer:
 **function pointer** is a pointer to const because function address place on *code segment* which *read-only* \
 *syntax*: data-type (*function-name)(parameter) \
 *e.g.* `void (*pointer_function)()`: pointer function point to a function with no parameter return void
-
 ## 1.7. Struct & Union & Enum
 **struct**, **union** and **enum** are user-define data types \
 **struct** is used to group related variables (members) into one  
@@ -97,19 +102,36 @@ In C, we don't have reference parameter so we can use *pointer* to subtitute
 **union** allows to store different data types to same memory     \
 **enum** is usually used to assign name to integral constants \
 `data structure alignment` is the term that means compiler "padding" into space between 2 data "naturally aligned", this mechanism help compiler better performance. We should arrange data in *struct* reasonable to optimize memory and performance
-
 ## 1.8. Extern & Static
-**extern** is used to notify to the compiler that variable is memory allocated and don't need to allocate again, it is usually used in multi source file projects \
+**extern** is used to notify to the compiler that variable is memory allocated and don't need to allocate again, it is usually used in multi-source file projects \
 **static** have 2 meaning: 
-* If variable is declared as global, that variable is only used in that file (multi source file projects)
-* Else if variable is declared as local in a function (or a class in C++), that varible is memory allocated once until the program end meaning that variable will not be destroyed when the function call end so it will use it last "state" when the function called again
+* If a variable is declared as global, that variable is only used in that file (multi-source file projects)
+* Else if that variable is declared as local in a function (or a class in C++), that variable is memory allocated once until the program ends meaning that the variable will not be destroyed when the function call ends so it will use its last "state" when the function called again
+## 1.9. Compilation Model
+**Preprocessor** will replace preprocessor directives (#) \
+**Compiler** will compile code to assembly code (.s/.asm) \
+**Assembler** will change assembly code to machine code in object code files(.o) \
+**Linker** will link object code files together to share library or executable file \
+Why preprocessing then linking ?
+## 1.10. Linker & Loader
+
+## 1.11. Function Invoker
+When you invoke a function, there are 2 important additional parts called **prologue** and **epilogue** \
+`prologue` is the concealed code run before the function is invoked, it is responsible to take the function's parameter to save to *stack* \
+`epilogue` is the concealed code run after the function is invoked, it is responsible for returning the function's result to the function invoker and removing the parameter saved to *stack* \
+*function*, *prologue* and *epilogue* take the same memory size no matter how many times the function is invoked which means the more you call the function, the more memory is saved \
+But there is a paradox in programming that the advantage in memory comes with the disadvantage in speed \
+The worst case is the function is too short that is shorter than *prologue*/*epilogue*
+## 1.12. Inline Function
+**inline** is used to define a macro-like function, meaning that the function's instructions will be replaced directly to its invoke in *preprocessor* step \
+This helps improve speed but paying by program size
 # 2. Computer Architect
 ## 2.1. Von Neumann & Harvard
 **Von Neumann** is the computer architect that have intercommunity bus for program memory and data memory \
 **Harvard** is reverse, so it have better performance
 ## 2.2. Little endian & Big endian
 **endian** is a storage mechanism so it is opposite to our thinking \
-**Little endian** is from LSB to MSB and **Big endian** is reverse
+**Little endian** is from LSB to MSB and **Big endian** is reversed
 # 3. Embedded
 ## Stay tuned !
 # 4. Operating System
@@ -130,10 +152,12 @@ These parts will be completed soon
 ## Interrupt
 ## ADC & DAC
 ## PWM
-## UART
+## USART
 ## I2C
 ## SPI
 ## CAN 
 ## WiFi
 ## Bluetooth
 ## MQTT
+## DMA
+## Bootloader
