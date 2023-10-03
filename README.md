@@ -1,7 +1,6 @@
 # Embedded Notebook
 Nothing, just Mike and Johnny
 # Table of contents
-
 - [Table of contents](#table-of-contents)
 - [About us](/about-us/about-us.md)
 - [1. C/C++](#1-cc)
@@ -13,6 +12,9 @@ Nothing, just Mike and Johnny
   - [1.6. Struct & Union & Enum](#16-struct--union--enum)
   - [1.7. Extern & Static](#17-extern--static)
 - [2. Embedded](#2-embedded)
+  - [2.1. Von Neumann & Harvard](#21-von-neumann--harvard)
+  - [2.2. Little endian & Big endian](#22-little-endian--big-endian)
+
 # 1. C/C++
 
 ## 1.1. C keywords
@@ -57,7 +59,7 @@ In C, we don't have reference parameter so we can use *pointer* to subtitute
 `struct in C` need to use *typedef* to don't use *struct* keyword whenever declare a new *struct variable*. In C++, it is not neccessary \
 **union** allows to store different data types to same memory     \
 **enum** is usually used to assign name to integral constants \
-`data alignment` is the term that means compiler "padding" into space between 2 data "naturally aligned", this mechanism help compiler better performance.
+`data structure alignment` is the term that means compiler "padding" into space between 2 data "naturally aligned", this mechanism help compiler better performance. We should arrange data in *struct* reasonable to optimize memory and performance
 
 ## 1.7. Extern & Static
 **extern** is used to notify to the compiler that variable is memory allocated and don't need to allocate again, it is usually used in multi source file projects \
@@ -65,4 +67,9 @@ In C, we don't have reference parameter so we can use *pointer* to subtitute
 * If variable is declared as global, that variable is only used in that file (multi source file projects)
 * Else if variable is declared as local in a function (or a class in C++), that varible is memory allocated once until the program end meaning that variable will not be destroyed when the function call end so it will use it last "state" when the function call again
 # 2. Embedded
-
+## 2.1. Von Neumann & Harvard
+**Von Neumann** is the computer architect that have intercommunity bus for program memory and data memory \
+**Harvard**  is reverse, so it have better performance
+## 2.2. Little endian & Big endian
+**endian** is a storage mechanism so it is opposite to our thinking \
+**Little endian** is from LSB to MSB and **Big endian** is reverse
