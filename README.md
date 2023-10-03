@@ -3,6 +3,7 @@ Nothing, just Mike and Johnny
 # Table of contents
 - [Table of contents](#table-of-contents)
 - [About us](/about-us/about-us.md)
+- [Introduce](#introduce)
 - [1. C/C++](#1-cc)
   - [1.1. C keywords](#11-c-keywords)
   - [1.2. Variables declaration](#12-variables-declaration)
@@ -11,10 +12,16 @@ Nothing, just Mike and Johnny
   - [1.5. Function pointer](#15-function-pointer)
   - [1.6. Struct & Union & Enum](#16-struct--union--enum)
   - [1.7. Extern & Static](#17-extern--static)
-- [2. Embedded](#2-embedded)
+- [2. Computer Architect](#2-computer-architect)
   - [2.1. Von Neumann & Harvard](#21-von-neumann--harvard)
   - [2.2. Little endian & Big endian](#22-little-endian--big-endian)
-
+- [3. Embedded](#3-embedded)
+- [4. Operating System](#4-operating-system)
+- [5. RTOS](#5-rtos)
+- [6. Linux Embedded](#6-linux-embedded)
+# Introduce
+Some words about this notebook: because two people are contributing to this notebook, there are differences in styles \
+**Mike's articles** written as if you have already known the basic and the knowledge only remind but not clearly for you to understand from zero
 # 1. C/C++
 
 ## 1.1. C keywords
@@ -66,10 +73,18 @@ In C, we don't have reference parameter so we can use *pointer* to subtitute
 **static** have 2 meaning: 
 * If variable is declared as global, that variable is only used in that file (multi source file projects)
 * Else if variable is declared as local in a function (or a class in C++), that varible is memory allocated once until the program end meaning that variable will not be destroyed when the function call end so it will use it last "state" when the function call again
-# 2. Embedded
+# 2. Computer Architect
 ## 2.1. Von Neumann & Harvard
 **Von Neumann** is the computer architect that have intercommunity bus for program memory and data memory \
 **Harvard**  is reverse, so it have better performance
 ## 2.2. Little endian & Big endian
 **endian** is a storage mechanism so it is opposite to our thinking \
 **Little endian** is from LSB to MSB and **Big endian** is reverse
+# 3. Embedded
+## Stay tuned !
+# 4. Operating system
+## Stay tuned !
+# 5. RTOS
+## Stay tuned !
+# 6. Linux Embedded
+## Stay tuned !
