@@ -14,7 +14,7 @@ Nothing, just Mike and Johnny
   - [1.7. Struct & Union & Enum](#17-struct--union--enum)
   - [1.8. Extern & Static](#18-extern--static)
   - [1.9. Compilation Model](#19-compilation-model)
-  - [1.10. Linker & Loader](#110-linker--loader)
+  - [1.10. Static & Dynamic Library](#110-static--dynamic-library)
   - [1.11. Function Invoker](#111-function-invoker)
   - [1.12. Inline Function](#112-inline-function)
 - [C++](C++/C++.md)
@@ -54,7 +54,7 @@ Some words about this notebook:
 ## Some huge parts will be separated to another files
 **C++** \
 **Python** \
-**Robot Operating System** \
+**Robot Operating System** 
 # 1. C
 ## 1.1. C keywords
 |           |           |           |           |
@@ -85,7 +85,6 @@ type-qualifier(s) type-modifier data-type variable-name = initial-value; \
 * Peripheral register mapping to memory 
 * Interrupt Service Routines (ISRs) 
 * Multi-thread applications
-
 **const volatile**: same as volatile but you can't change its value by the code
 ## 1.5. Pointer:
 **pointer** is variables that hold address \
@@ -111,10 +110,11 @@ In C, we don't have reference parameter so we can use *pointer* to subtitute
 **Preprocessor** will replace preprocessor directives (#) \
 **Compiler** will compile code to assembly code (.s/.asm) \
 **Assembler** will change assembly code to machine code in object code files(.o) \
-**Linker** will link object code files together to share library or executable file \
-Why preprocessing then linking ?
-## 1.10. Linker & Loader
-
+**Linker** will link object code files together to *shared library* or *executable file* \
+A little bit about *preprocessing* and *linking*: *preprocessing* replaces header file (.h) but it usually only contains declarations not definitions and the *linking* link the definitions to these declarations
+## 1.10. Static & Shared Library
+**Static library** is linked in compile time \
+**Shared/Dynamic library** is linked in run time
 ## 1.11. Function Invoker
 When you invoke a function, there are 2 important additional parts called **prologue** and **epilogue** \
 `prologue` is the concealed code run before the function is invoked, it is responsible to take the function's parameter to save to *stack* \
@@ -132,6 +132,24 @@ This helps improve speed but paying by program size
 ## 2.2. Little endian & Big endian
 **endian** is a storage mechanism so it is opposite to our thinking \
 **Little endian** is from LSB to MSB and **Big endian** is reversed
+## 2.3. Memory Types
+There are two important memory components in computer: **RAM** and **ROM** \
+`RAM`, also called memory, is a temporary workspace for data because it is high speed and volatile \
+Some *RAM* types:
+* SRAM
+* DRAM
+
+`ROM`, also called storage, is reversed \
+Some *ROM* types:
+* PROM 
+* EPROM 
+* EEPROM 
+* MROM 
+
+There are also some additional memory types:
+* Cache
+* Flash 
+
 # 3. Embedded
 ## Stay tuned !
 # 4. Operating System
@@ -142,7 +160,6 @@ This helps improve speed but paying by program size
 ## Stay tuned !
 # Undistributed
 These parts will be completed soon
-## 2.3. Memory Types
 ## 3.1. Digital & Analog World
 ## 3.2. Embedded Systems
 ## 3.3. Cypher-Physical Systems
