@@ -39,7 +39,8 @@ Some words about this notebook:
 **Robot Operating System** 
 # 1. C
 ## 1.1. C keywords
-|           |           |           |           |
+
+|       f    |  f         |        f   |         f  |
  :---:      | :---:     |  :---:    | :---:     
  auto	      | double	  | int	      | struct    
  break	    | else	    | long	    | switch    
