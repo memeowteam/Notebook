@@ -27,7 +27,8 @@ Nothing, just Mike and Johnny
 - [5. RTOS](#5-rtos)
 - [Robot Operating System](ROS/ROS.md)
 - [6. Linux Embedded](#6-linux-embedded)
-- [Available soon](#undistributed)
+- [Available soon](#undistributed) 
+
 # Introduce
 Some words about this notebook: 
 ## Because two people are contributing to this notebook, there are differences in styles 
