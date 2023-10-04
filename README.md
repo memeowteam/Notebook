@@ -28,25 +28,6 @@ Nothing, just Mike and Johnny
 - [Robot Operating System](ROS/ROS.md)
 - [6. Linux Embedded](#6-linux-embedded)
 - [Available soon](#undistributed)
-<!-- 
-  - [2.3. Memory Types](#23-memory-types)
-  - [3.1. Digital & Analog World](#31-digital--analog-world)
-  - [3.2. Embedded Systems](#32-embedded-systems)
-  - [3.3. Cypher-Physical Systems](#33-cypher-physical-systems)
-  - [3.4. Sensors & Actuators](#34-sensors--actuators)
-  - [3.5. Internet of Things](#35-internet-of-things)
-  - [GPIO](#gpio)
-  - [Interrupt](#interrupt)
-  - [ADC & DAC](#adc--dac)
-  - [PWM](#pwm)
-  - [USART](#usart)
-  - [I2C](#i2c)
-  - [SPI](#spi)
-  - [CAN](#can)
-  - [WiFi](#wifi)
-  - [Bluetooth](#bluetooth)
-  - [MQTT](#mqtt)
--->
 # Introduce
 Some words about this notebook: 
 ## Because two people are contributing to this notebook, there are differences in styles 
@@ -178,3 +159,24 @@ These parts will be completed soon
 ## MQTT
 ## DMA
 ## Bootloader
+
+
+<!-- 
+  - [2.3. Memory Types](#23-memory-types)
+  - [3.1. Digital & Analog World](#31-digital--analog-world)
+  - [3.2. Embedded Systems](#32-embedded-systems)
+  - [3.3. Cypher-Physical Systems](#33-cypher-physical-systems)
+  - [3.4. Sensors & Actuators](#34-sensors--actuators)
+  - [3.5. Internet of Things](#35-internet-of-things)
+  - [GPIO](#gpio)
+  - [Interrupt](#interrupt)
+  - [ADC & DAC](#adc--dac)
+  - [PWM](#pwm)
+  - [USART](#usart)
+  - [I2C](#i2c)
+  - [SPI](#spi)
+  - [CAN](#can)
+  - [WiFi](#wifi)
+  - [Bluetooth](#bluetooth)
+  - [MQTT](#mqtt)
+-->
