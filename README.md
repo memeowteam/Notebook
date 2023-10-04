@@ -54,7 +54,7 @@ Some words about this notebook:
 type-qualifier(s) type-modifier data-type variable-name = initial-value; \
 `type-qualifier`: *const*, *volatile*, *restrict* \
 `type-modifier`: *short*, *long*, *unsigned*, *signed* \
-`data-type`: *interger*(int), *floating point*(double, float), *enumerated*, *derived*, *void* 
+`data-type`: *interger* (int), *floating point* (double, float), *enumerated*, *derived* (array, struct, union, pointer), *void* 
 
 ## 1.3. Memory Layout
 **Memory layout** from low to high addresses in C includes: 
@@ -78,9 +78,9 @@ type-qualifier(s) type-modifier data-type variable-name = initial-value; \
 In C, we don't have reference parameter so we can use *pointer* to subtitute
 
 ## 1.6. Function pointer:
-**function pointer** is a pointer to const because function address place on *code segment* which *read-only* \
+**function pointer** is a pointer to const because function address place on *code segment* which is *read-only* \
 *syntax*: data-type (*function-name)(parameter) \
-*e.g.* `void (*pointer_function)()`: pointer function point to a function with no parameter return void
+e.g. `void (*pointer_function)()`: pointer function point to a function with no parameter and return void
 
 ## 1.7. Struct & Union & Enum
 **struct**, **union** and **enum** are user-define data types \
