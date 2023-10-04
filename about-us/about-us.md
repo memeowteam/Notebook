@@ -16,7 +16,7 @@ Also, cannot forget our "genius" idol who give us self-depreciation to learn mor
 * [Mr. 稚晖君](https://www.youtube.com/@user-ow7ej5ss7j)
 
 # Mike
-My name is Ta Dien Minh Tri. I am a 4th-year student at the University of Information Technology faculty of Computer Engineering and a firmware intern at Combros Ltd.
+My name is Ta Dien Minh Tri. I am a 4th-year student at the University of Information Technology faculty of Computer Engineering and a firmware intern at Combros Technology Co, LTD.
 
 This is my [CV](/about-us/Mike/Ta%20Dien%20Minh%20Tri%20-%20CV.pdf)
 # Johnny
