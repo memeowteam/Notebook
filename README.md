@@ -254,3 +254,9 @@ Also, they can be configurated for other functions, called *alternate function* 
   - [Bluetooth](#bluetooth)
   - [MQTT](#mqtt)
 -->
+
+<br> [<kbd> <br> FEEDBACK <br> </kbd>][FEEDBACK] <br>
+<br> [<kbd> <br> EMAIL <br> </kbd>][EMAIL] <br>
+
+[FEEDBACK]: https://github.com/memeowteam/Notebook/discussions
+[EMAIL]: mailto:memeowteam@gmail.com
