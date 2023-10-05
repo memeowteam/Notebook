@@ -136,23 +136,24 @@ This helps improve speed but paying by program size
 **endian** is a storage mechanism so it is opposite to our thinking \
 **Little endian** is from LSB to MSB and **Big endian** is reversed
 
-## 2.3. Memory Types
-There are two important memory components in computer: **RAM** and **ROM** \
-`RAM`, also called memory, is a temporary workspace for data because it is high speed and volatile \
-Some *RAM* types:
-* SRAM
-* DRAM
+## 2.3. Memory Architect
+There are two memory types in computer: **volatile** and **non-volatile** \
+`volatile` with  representation is `RAM`, also called memory, loses contents when power is off, a temporary workspace for data because it is high-speed \
+Some *volatile memory*:
+* SRAM or *static RAM*: fast, small capacity, high energy consumption, used for *caches*
+* DRAM or *dynamic RAM*: slower than SRAM, higher capacity, requires periodic refresh, used for *main memory*
 
-`ROM`, also called storage, is reversed \
-Some *ROM* types:
-* PROM 
-* EPROM 
-* EEPROM 
-* MROM 
+`non-volatile` with  representation is `ROM`, also called storage, preserves contents when power is off, used to store data \
+Some *non-volatile memory* (their name say all about them):
+* PROM or *programmable ROM* & MROM or *mask ROM*
+* EPROM or *erasable programmable ROM*
+* EEPROM or *electrically erasable programmable ROM*
 
 There are also some additional memory types:
-* Cache
-* Flash 
+* Cache: *SRAM* application
+* Flash: erased a "block" at a time, limited number of program/erase cycles 
+* Bootloader: on power up, transfers data from non-volatile to volatile memory
+* Disk
 
 # 3. Embedded
 
