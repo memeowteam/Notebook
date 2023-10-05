@@ -315,8 +315,8 @@ Command line interpreter system
   - [MQTT](#mqtt)
 -->
 
-<br> [<kbd> <br> FEEDBACK <br> </kbd>][FEEDBACK] <br>
-<br> [<kbd> <br> EMAIL <br> </kbd>][EMAIL] <br>
+<br> [<kbd> <br> FEEDBACK <br> </kbd>][FEEDBACK] 
+ [<kbd> <br> EMAIL <br> </kbd>][EMAIL] <br>
 
 [FEEDBACK]: https://github.com/memeowteam/Notebook/discussions
 [EMAIL]: mailto:memeowteam@gmail.com
