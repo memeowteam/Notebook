@@ -61,7 +61,7 @@ Some words about this notebook:
 type-qualifier(s) type-modifier data-type variable-name = initial-value; \
 `type-qualifier`: *const*, *volatile*, *restrict* \
 `type-modifier`: *short*, *long*, *unsigned*, *signed* \
-`data-type`: *interger* (int), *floating point* (double, float), *enumerated*, *derived* (array, struct, union, pointer), *void* 
+`data-type`: *integer* (int), *floating point* (double, float), *enumerated*, *derived* (array, struct, union, pointer), *void* 
 
 ## 1.3. Memory Layout
 **Memory layout** from low to high addresses in C includes: 
@@ -82,7 +82,7 @@ type-qualifier(s) type-modifier data-type variable-name = initial-value; \
 ## 1.5. Pointer:
 **pointer** is variables that hold address \
 *pointer* point to any type have same size \
-In C, we don't have reference parameter so we can use *pointer* to subtitute
+In C, we don't have reference parameter so we can use *pointer* to substitute
 
 ## 1.6. Function pointer:
 **function pointer** is a pointer to const because function address place on *code segment* which is *read-only* \
@@ -92,7 +92,7 @@ e.g. `void (*pointer_function)()`: pointer function point to a function with no 
 ## 1.7. Struct & Union & Enum
 **struct**, **union** and **enum** are user-define data types \
 **struct** is used to group related variables (members) into one  
-`struct in C` need to use *typedef* to don't use *struct* keyword whenever declare a new *struct variable*. In C++, it is not neccessary \
+`struct in C` need to use *typedef* to don't use *struct* keyword whenever declare a new *struct variable*. In C++, it is not necessary \
 **union** allows to store different data types to same memory     \
 **enum** is usually used to assign name to integral constants \
 `data structure alignment` is the term that means compiler "padding" into space between 2 data "naturally aligned", this mechanism help compiler better performance. We should arrange data in *struct* reasonable to optimize memory and performance
@@ -221,7 +221,7 @@ Also, they can be configurated for other functions, called *alternate function* 
 **Universal Synchronous/Asynchronous Receiver-Transmitter**
 
 ## I2C
-**Inter-Intergrated Circuit**, also called **Two Wire Interface**
+**Inter-Integrated Circuit**, also called **Two Wire Interface**
 
 ## SPI
 **Serial Peripheral Interface**
