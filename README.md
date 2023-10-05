@@ -23,7 +23,7 @@ Nothing, just Mike and Johnny
   - [2.1. Von Neumann & Harvard](#21-von-neumann--harvard)
   - [2.2. Little endian & Big endian](#22-little-endian--big-endian)
 - [3. Embedded](#3-embedded)
-  - [3.1. Digital & Analog World](#31-digital--analog-world)
+  - [3.1. Digital & Analog](#31-digital--analog)
   - [3.2. Embedded Systems](#32-embedded-systems)
   - [3.3. Cypher-Physical Systems](#33-cypher-physical-systems)
   - [3.4. Sensors & Actuators](#34-sensors--actuators)
@@ -130,11 +130,11 @@ This helps improve speed but paying by program size
 
 ## 2.1. Von Neumann & Harvard
 **Von Neumann** is the computer architect that have intercommunity bus for program memory and data memory \
-**Harvard** is reverse, so it have better performance
+**Harvard** is the opposite, so it have better performance
 
 ## 2.2. Little endian & Big endian
 **endian** is a storage mechanism so it is opposite to our thinking \
-**Little endian** is from LSB to MSB and **Big endian** is reversed
+**Little endian** is from LSB to MSB and **Big endian** is the opposite
 
 ## 2.3. Memory Architect
 There are two memory types in computer: **volatile** and **non-volatile** \
@@ -195,20 +195,48 @@ This part will be added later
 
 # Undistributed
 
-These parts will be completed soon
+These parts will be completed or distributed soon
 
 ## GPIO
+**General-Purpose Input/Output Ports**  handles both incoming and outgoing digital signal \
+They can be *INPUT* or *OUTPUT*, *LOW* or *HIGH* \
+Also, they can be configurated for other functions, called *alternate function* \
+`Pull-up resistor` is pulled *HIGH* the GPIO when the button is not pressed and pulled *LOW* the GPIO when the button is pressed \
+`Pull-down resistor` is the opposite \
+`Open-drain` make the GPIO can only be *LOW* or *floating*, so we have to use external pull-up resistor.
+
 ## Interrupt
+
 ## ADC & DAC
+**Analog to Digital Converter** and **Digital to Analog Converter** are very important components in electronic equipments \
+*ADC* and *DAC* architect won't be mention here, let's go to their parameters 
+* Reference Voltage: 
+* Resolution: 
+* Quantization: 
+
 ## PWM
+**Pulse Width Modulation**
+
 ## USART
+**Universal Synchronous/Asynchronous Receiver-Transmitter**
+
 ## I2C
+**Inter-Intergrated Circuit**, also called **Two Wire Interface**
+
 ## SPI
+**Serial Peripheral Interface**
+
 ## CAN 
+**Controller Area Network**
+
 ## WiFi
+
 ## Bluetooth
+
 ## MQTT
+
 ## DMA
+
 ## Bootloader
 
 
