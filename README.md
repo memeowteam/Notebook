@@ -23,6 +23,11 @@ Nothing, just Mike and Johnny
   - [2.1. Von Neumann & Harvard](#21-von-neumann--harvard)
   - [2.2. Little endian & Big endian](#22-little-endian--big-endian)
 - [3. Embedded](#3-embedded)
+  - [3.1. Digital & Analog World](#31-digital--analog-world)
+  - [3.2. Embedded Systems](#32-embedded-systems)
+  - [3.3. Cypher-Physical Systems](#33-cypher-physical-systems)
+  - [3.4. Sensors & Actuators](#34-sensors--actuators)
+  - [3.5. Internet of Things](#35-internet-of-things)
 - [4. Operating System](#4-operating-system)
 - [5. RTOS](#5-rtos)
 - [Robot Operating System](ROS/ROS.md)
@@ -37,7 +42,9 @@ Some words about this notebook:
 **C++** \
 **Python** \
 **Robot Operating System** 
+## We are not familiar with web applications so our GitHub Webpage is for fun, our main target is knowledge
 # 1. C
+
 ## 1.1. C keywords
 
  auto	          | double	      | int	          | struct 
@@ -149,7 +156,29 @@ There are also some additional memory types:
 
 # 3. Embedded
 
-## Stay tuned !
+## 3.1. Digital & Analog
+Our world is *analog* but computer's world is *digital* \
+**analog** refers to a continuously changing representation of a continuously variable quantity \
+**digital** refers to representing these variable quantities in terms of actual numbers, or digits \
+So we have to do something for computers to understand our world, there will be discuss in [ADC & DAC](#adc--dac) part
+
+## 3.2. Embedded Systems
+Embedded system is computer system with a **dedicated function** *embedded* as a part of a complete device and have limited resources as *memory*, *peripheral*, *speed*, ... \
+They have some features as: *small size*, *low per-unit cost*, *low power consumption*, ...
+
+## 3.3. Cypher-Physical Systems
+### Stay tuned !
+This part will be added later
+
+## 3.4. Sensors & Actuators
+**Sensors** are devices that measure physical quantities \
+`sensor` can be seem as input of a system, it responsible to *"read from physical world"* \
+**Actuators** are devices that modify physical quantities \
+`actuator` can be seem as output of a system, it responsible to *"write to physical world"* 
+
+## 3.5. Internet of Things
+### Stay tuned !
+This part will be added later
 
 # 4. Operating System
 
@@ -166,11 +195,7 @@ There are also some additional memory types:
 # Undistributed
 
 These parts will be completed soon
-## 3.1. Digital & Analog World
-## 3.2. Embedded Systems
-## 3.3. Cypher-Physical Systems
-## 3.4. Sensors & Actuators
-## 3.5. Internet of Things
+
 ## GPIO
 ## Interrupt
 ## ADC & DAC
@@ -188,11 +213,6 @@ These parts will be completed soon
 
 <!-- 
   - [2.3. Memory Types](#23-memory-types)
-  - [3.1. Digital & Analog World](#31-digital--analog-world)
-  - [3.2. Embedded Systems](#32-embedded-systems)
-  - [3.3. Cypher-Physical Systems](#33-cypher-physical-systems)
-  - [3.4. Sensors & Actuators](#34-sensors--actuators)
-  - [3.5. Internet of Things](#35-internet-of-things)
   - [GPIO](#gpio)
   - [Interrupt](#interrupt)
   - [ADC & DAC](#adc--dac)
