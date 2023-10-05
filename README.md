@@ -197,6 +197,11 @@ This part will be added later
 
 These parts will be completed or distributed soon
 
+## Protocol & Interface
+`protocol` is a set of rules for devices to communicate with others as *preamble*, *data length*, *conditions*, *crc*, ... and they need to be agreed by all devices \
+`interface` is the way devices connect to others as wires, radio waves, ... \
+A *protocol* usually come together with that *protocol's interface* so there are many people have ambiguous between *protocol* and *interface* 
+
 ## GPIO
 **General-Purpose Input/Output Ports**  handles both incoming and outgoing digital signal \
 They can be *INPUT* or *OUTPUT*, *LOW* or *HIGH* \
@@ -218,16 +223,36 @@ Also, they can be configurated for other functions, called *alternate function* 
 **Pulse Width Modulation**
 
 ## USART
-**Universal Synchronous/Asynchronous Receiver-Transmitter**
+**Universal Synchronous/Asynchronous Receiver-Transmitter** protocol:
+* Simplex, Half-duplex, Full-duplex
+* Single Master - Single Slave
+
+In UART there are some definitions that must be the same on devices:
+* Baudrate: tranceive data rate
+* Start bit
+* Stop bit
+* Data frame length: it can be 5, 6, 7 or 8 (even 9 when don't use parity bit)
+* Parity bit: used to check data correction. When parity bit = 0 number of bit 1 must be even and when parity bit = 1 number of bit 1 must be odd unless the data is wrong
+
+UART interface is this RX to other TX and this TX to other RX \
+I have never used USART so I don't have information about it exclude it is synchronous \
+In addition, there is another mode called Multiprocessor UART, maybe I will add it later
 
 ## I2C
-**Inter-Integrated Circuit**, also called **Two Wire Interface**
+**Inter-Integrated Circuit**, also called **Two Wire Interface** protocol:
+* Half-duplex
+* Multi Master - Multi Slave
+* Synchronous
 
 ## SPI
-**Serial Peripheral Interface**
+**Serial Peripheral Interface** protocol:
+* Full-duplex
+* Single Master - Multi Slave
+* Synchronous
 
 ## CAN 
-**Controller Area Network**
+**Controller Area Network** protocol:
+
 
 ## WiFi
 
@@ -241,7 +266,6 @@ Also, they can be configurated for other functions, called *alternate function* 
 
 
 <!-- 
-  - [2.3. Memory Types](#23-memory-types)
   - [GPIO](#gpio)
   - [Interrupt](#interrupt)
   - [ADC & DAC](#adc--dac)
