@@ -155,6 +155,8 @@ There are also some additional memory types:
 * Bootloader: on power up, transfers data from non-volatile to volatile memory
 * Disk
 
+Memory component speed ordered from fastest to slowest: register, cache, main memory, non-volatile memory, hard-disk drives, optical disk, magnetic tapes
+
 # 3. Embedded
 
 ## 3.1. Digital & Analog
@@ -212,6 +214,8 @@ Also, they can be configurated for other functions, called *alternate function* 
 
 ## Interrupt
 
+## Timers
+
 ## ADC & DAC
 **Analog to Digital Converter** and **Digital to Analog Converter** are very important components in electronic equipments \
 *ADC* and *DAC* architect won't be mention here, let's go to their parameters 
@@ -264,6 +268,38 @@ In addition, there is another mode called Multiprocessor UART, maybe I will add 
 
 ## Bootloader
 
+## OS Definition
+**Operating System** is software or it can be seem as the intermediate between user and hardware that runs on a computing device and manages the hardware and software components that make up a functional computing system 
+
+## OS function
+Hardware management \
+Provide interface for users \
+Application installation \
+Connect hardware \
+Interaction between application and hardware \
+CPU scheduling \
+Process coordination & synchronization \
+Resource management \
+Access control and protect system \
+Integrity maintenance, error control and recovery
+
+## OS types
+Base on processing:
+* Uniprogramming OS
+* Multiprogramming OS
+* Time-sharing OS
+* Parallel/multiprocessor/tightly-coupled OS
+* Clustered/distributed/loosely-coupled  OS
+* RTOS
+
+## OS components
+Process/thread management \
+Primary memory management \
+File management \
+I/O system management \
+Secondary memory management \
+Protect system \
+Command line interpreter system 
 
 <!-- 
   - [GPIO](#gpio)
