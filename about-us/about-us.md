@@ -1,3 +1,5 @@
+<button name="button" onclick="http://www.google.com">Click me</button>
+
 # About us
 Firstly, shout out for organizations and people which we respect
 * Our families
