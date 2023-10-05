@@ -1,11 +1,4 @@
-<br>
-
-[<kbd> <br> Title <br> </kbd>][HOME]
-
-<br>
-
-[HOME]: ../README.md
-
+<br> [<kbd> <br> HOME <br> </kbd>][HOME] <br>
 # About us
 Firstly, shout out for organizations and people which we respect
 * Our families
@@ -31,3 +24,5 @@ This is my [CV](/about-us/Mike/Ta%20Dien%20Minh%20Tri%20-%20CV.pdf)
 My name is Phan Xuan Anh Tu. I am a 4th-year student at the Ho Chi Minh University of Technology falcuty of Electrical Engineering, subdivision Automation and Control. 
 
 This is my [CV](/about-us/Johnny/AnhTu_Résume.pdf)
+
+[HOME]: ../README.md
