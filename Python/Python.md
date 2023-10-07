@@ -1,4 +1,5 @@
-# Python Notebook
+# Python
+<br> [<kbd> <br> HOME <br> </kbd>][HOME] <br>
 Because Python 3 is bullshit and i can't remember everything so i have to write down things i've learned :).
 # Table of contents
 - [Table of contents](#table-of-contents)
@@ -9,3 +10,4 @@ Because Python 3 is bullshit and i can't remember everything so i have to write 
 * 4 data-types: *`interger, string, boolean, float`*.
 * Multiple declaration: *name, age, height, alive* = `Johnny, 21, 169.5, True`.
 
+[HOME]: ../README.md
