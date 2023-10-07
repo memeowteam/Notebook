@@ -1,3 +1,8 @@
+---
+title: About us
+description: Some information about authors
+---
+
 <br> [<kbd> <br> HOME <br> </kbd>][HOME] <br>
 # About us
 Firstly, shout out for organizations and people which we respect

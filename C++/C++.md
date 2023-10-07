@@ -1,3 +1,8 @@
+---
+title: C++
+description: Some C++ update to C
+---
+
 <br> [<kbd> <br> HOME <br> </kbd>][HOME] <br>
 ## New Dynamic Memory Allocation
 There are just two keywords in C++

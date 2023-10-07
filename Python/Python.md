@@ -1,4 +1,8 @@
-# Python
+---
+title: Python
+description: Python basics
+---
+
 <br> [<kbd> <br> HOME <br> </kbd>][HOME] <br>
 Because Python 3 is bullshit and i can't remember everything so i have to write down things i've learned :).
 # Table of contents
