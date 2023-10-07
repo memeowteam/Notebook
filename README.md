@@ -1,9 +1,20 @@
 # Embedded Notebook
-Nothing, just Mike and Johnny
+Nothing, just Mike and Johnny's notebook
+
+<br> [<kbd> <br> ABOUT US <br> </kbd>][ABOUT_US]<br>
+
+# Some Words About This Notebook
+## Because two people are contributing to this notebook, there are differences in styles 
+**Mike's articles** written as if you have already known the basic and the knowledge only remind but not clearly for you to understand from zero
+## Some huge parts will be separated to another files
+**C++** \
+**Python** \
+**Robot Operating System** 
+## We are not familiar with web applications so our GitHub Webpage is for fun, our main target is knowledge
+
 # Table of contents
 - [Table of contents](#table-of-contents)
-- [About us](/about-us/about-us.md)
-- [Introduce](#introduce)
+- [Some Words About This Notebook](#some-words-about-this-notebook)
 - [1. C](#1-c)
   - [1.1. C keywords](#11-c-keywords)
   - [1.2. Variables declaration](#12-variables-declaration)
@@ -53,15 +64,6 @@ Nothing, just Mike and Johnny
 - [7. Linux Embedded](#6-linux-embedded)
 - [Available soon](#undistributed) 
 
-# Introduce
-Some words about this notebook: 
-## Because two people are contributing to this notebook, there are differences in styles 
-**Mike's articles** written as if you have already known the basic and the knowledge only remind but not clearly for you to understand from zero
-## Some huge parts will be separated to another files
-**C++** \
-**Python** \
-**Robot Operating System** 
-## We are not familiar with web applications so our GitHub Webpage is for fun, our main target is knowledge
 # 1. C
 
 ## 1.1. C keywords
@@ -125,10 +127,10 @@ e.g. `void (*pointer_function)()`: pointer function point to a function with no 
 * Else if that variable is declared as local in a function (or a class in C++), that variable is memory allocated once until the program ends meaning that the variable will not be destroyed when the function call ends so it will use its last "state" when the function called again
 
 ## 1.9. Compilation Model
-**Preprocessor** will replace preprocessor directives (#) \
-**Compiler** will compile code to assembly code (.s/.asm) \
-**Assembler** will change assembly code to machine code in object code files(.o) \
-**Linker** will link object code files together to *shared library* or *executable file* \
+**Preprocessing**: *preprocessor* will replace preprocessor directives (#) \
+**Compiling**: *compiler* will compile code to assembly code (.s/.asm) \
+**Assembling**: *assembler* will change assembly code to machine code in object code files(.o) \
+**Linking**: *linker* will link object code files together to *shared library* or *executable file* \
 A little bit about *preprocessing* and *linking*: *preprocessing* replaces header file (.h) but it usually only contains declarations not definitions and the *linking* link the definitions to these declarations
 
 ## 1.10. Static & Shared Library
@@ -344,17 +346,11 @@ Command line interpreter system
 
 These parts will be completed or distributed soon
 
-
-
-
-
-## Scheduling
-<!-- 
-  
--->
+## OS Scheduling
 
 <br> [<kbd> <br> FEEDBACK <br> </kbd>][FEEDBACK] 
  [<kbd> <br> EMAIL <br> </kbd>][EMAIL] <br>
 
+[ABOUT_US]: about-us/about-us.md
 [FEEDBACK]: https://github.com/memeowteam/Notebook/discussions
 [EMAIL]: mailto:memeowteam@gmail.com
