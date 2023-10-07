@@ -242,10 +242,10 @@ A *protocol* usually come together with that *protocol's interface* so there are
 `interface` is the way devices connect to others as wires, radio waves, ... 
 
 ## Some Couple Term In Protocols
-**Synchronous** and **Asynchronous**: these are two important term in communication, they imply to *clock*. *Synchronous transmissions* are synchronized by an *clock* and *asynchronous transmissions* are not \
+**Synchronous** and **Asynchronous**: these are two important term in communication, they imply to *clock*. *Synchronous transmissions* are synchronized by a *clock* and *asynchronous transmissions* are not \
 **Wire** and **Wireless**: just *wire* and *wireless* \
 **Serial** and **Parallel**: data transmission *serial* or *parallel* (*e.g.* one wire or multi wires) \
-**Simplex**, **Half-duplex** and **Full-duplex**: in simplex mode the signal is sent in one direction (only one device can sent data), in half-duplex the signal is sent in both directions but one at a time, in full-duplex signal is sent in both diretions at the same time \
+**Simplex**, **Half-duplex** and **Full-duplex**: in simplex mode the signal is sent in one direction (only one device can sent data), in half-duplex the signal is sent in both directions but one at a time, in full-duplex signal is sent in both directions at the same time \
 **Master** and **Slave**: *master* will be the *clock* controller \
 **Server** and **Client**: *client* is requester and *server* serves
 
