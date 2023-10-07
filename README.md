@@ -1,8 +1,8 @@
 # Embedded Notebook
-Nothing, just Mike and Johnny
-<br> [<kbd> <br> About us <br> </kbd>][ABOUT_US]<br>
+Nothing, just Mike and Johnny's notebook
+<br> [<kbd> <br> ABOUT US <br> </kbd>][ABOUT_US]<br>
 
-# Some words about this notebook: 
+# Some Words About This Notebook
 ## Because two people are contributing to this notebook, there are differences in styles 
 **Mike's articles** written as if you have already known the basic and the knowledge only remind but not clearly for you to understand from zero
 ## Some huge parts will be separated to another files
@@ -13,7 +13,7 @@ Nothing, just Mike and Johnny
 
 # Table of contents
 - [Table of contents](#table-of-contents)
-- [About us](/about-us/about-us.md)
+- [Some Words About This Notebook](#some-words-about-this-notebook)
 - [1. C](#1-c)
   - [1.1. C keywords](#11-c-keywords)
   - [1.2. Variables declaration](#12-variables-declaration)
