@@ -19,11 +19,14 @@ Also, cannot forget our "genius" idol who give us self-depreciation to learn mor
 # Mike
 My name is Ta Dien Minh Tri. I am a 4th-year student at the University of Information Technology faculty of Computer Engineering and a firmware intern at Combros Technology Co, LTD.
 
-<br> [<kbd> <br> Mike CV <br> </kbd>][MIKE_CV]<br>
+<br> [<kbd> <br> Mike CV <br> </kbd>][MIKE_CV]
+ [<kbd> <br> Mike Github <br> </kbd>][MIKE_GITHUB]<br>
 # Johnny
 My name is Phan Xuan Anh Tu. I am a 4th-year student at the Ho Chi Minh University of Technology falcuty of Electrical Engineering, subdivision Automation and Control. 
+
 <br> [<kbd> <br> Johnny CV <br> </kbd>][JOHNNY_CV]<br>
 
 [HOME]: ../README.md
 [MIKE_CV]: Mike/TaDienMinhTri-CV.pdf
+[MIKE_GITHUB]: https://github.com/tritdm
 [JOHNNY_CV]: Johnny/AnhTu_Résume.pdf

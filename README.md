@@ -1,9 +1,19 @@
 # Embedded Notebook
 Nothing, just Mike and Johnny
+<br> [<kbd> <br> About us <br> </kbd>][ABOUT_US]<br>
+
+# Some words about this notebook: 
+## Because two people are contributing to this notebook, there are differences in styles 
+**Mike's articles** written as if you have already known the basic and the knowledge only remind but not clearly for you to understand from zero
+## Some huge parts will be separated to another files
+**C++** \
+**Python** \
+**Robot Operating System** 
+## We are not familiar with web applications so our GitHub Webpage is for fun, our main target is knowledge
+
 # Table of contents
 - [Table of contents](#table-of-contents)
 - [About us](/about-us/about-us.md)
-- [Introduce](#introduce)
 - [1. C](#1-c)
   - [1.1. C keywords](#11-c-keywords)
   - [1.2. Variables declaration](#12-variables-declaration)
@@ -53,15 +63,6 @@ Nothing, just Mike and Johnny
 - [7. Linux Embedded](#6-linux-embedded)
 - [Available soon](#undistributed) 
 
-# Introduce
-Some words about this notebook: 
-## Because two people are contributing to this notebook, there are differences in styles 
-**Mike's articles** written as if you have already known the basic and the knowledge only remind but not clearly for you to understand from zero
-## Some huge parts will be separated to another files
-**C++** \
-**Python** \
-**Robot Operating System** 
-## We are not familiar with web applications so our GitHub Webpage is for fun, our main target is knowledge
 # 1. C
 
 ## 1.1. C keywords
@@ -356,5 +357,6 @@ These parts will be completed or distributed soon
 <br> [<kbd> <br> FEEDBACK <br> </kbd>][FEEDBACK] 
  [<kbd> <br> EMAIL <br> </kbd>][EMAIL] <br>
 
+[ABOUT_US]: about-us/about-us.md
 [FEEDBACK]: https://github.com/memeowteam/Notebook/discussions
 [EMAIL]: mailto:memeowteam@gmail.com
