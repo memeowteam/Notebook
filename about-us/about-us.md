@@ -21,7 +21,7 @@ My name is Ta Dien Minh Tri. I am a 4th-year student at the University of Inform
 
 This is my [CV](/Notebook/about-us/Mike/TaDienMinhTri-CV.pdf)
 # Johnny
-My name is Phan Xuan Anh Tu. I am a 4th-year student at the Ho Chi Minh University of Technology falcuty of Electrical Engineering, subdivision Automation and Control. 
+My name is Phan Xuan Anh Tu. I am a 4th-year student at the Ho Chi Minh University of Technology faculty of Electrical Engineering, subdivision Automation and Control. 
 
 This is my [CV](/Notebook/about-us/Johnny/AnhTu_Résume.pdf)
 
