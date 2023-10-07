@@ -2,7 +2,7 @@
 # Table of content 
 
 ## Class keyword
-The most remarkable feature of C++ is `class`. Class binds together data and methods that work on data. So `class` is an abstract data type (ADT). The creation of class simply creates a tempalte.
+The most remarkable feature of C++ is `class`. Class binds together data and methods that work on data. So `class` is an abstract data type (ADT). The creation of class simply creates a template.
 ```
 class class_name {
     public: 
@@ -39,7 +39,7 @@ void demo::input_data(int x,int y)
 void main( )
 {
     demo d1;              // Object instance
-    d1.input_data(10,40); // Call member function of instace d1
+    d1.input_data(10,40); // Call member function of instance d1
     getch();              // Wait key press
 }
 ``` 
