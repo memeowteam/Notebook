@@ -17,6 +17,7 @@ Nothing, just Mike and Johnny
   - [1.10. Static & Dynamic Library](#110-static--dynamic-library)
   - [1.11. Function Invoker](#111-function-invoker)
   - [1.12. Inline Function](#112-inline-function)
+  - [1.13. Dynamic Memory Allocation](#113-dynamic-memory-allocation)
 - [C++](C++/C++.md)
 - [Python](Python/Python.md)
 - [2. Computer Architect](#2-computer-architect)
@@ -28,10 +29,28 @@ Nothing, just Mike and Johnny
   - [3.3. Cypher-Physical Systems](#33-cypher-physical-systems)
   - [3.4. Sensors & Actuators](#34-sensors--actuators)
   - [3.5. Internet of Things](#35-internet-of-things)
-- [4. Operating System](#4-operating-system)
-- [5. RTOS](#5-rtos)
+- [4. Micro-controller](#4-micro-controller)
+  - [GPIO](#gpio)
+  - [Interrupt](#interrupt)
+  - [ADC & DAC](#adc--dac)
+  - [PWM](#pwm)
+  - [Protocol & Interface](#protocol--interface)
+  - [Some Couple Term In Protocols](#some-couple-term-in-protocols)
+  - [USART](#usart)
+  - [I2C](#i2c)
+  - [SPI](#spi)
+  - [CAN](#can)
+  - [WiFi](#wifi)
+  - [Bluetooth](#bluetooth)
+  - [MQTT](#mqtt)
+- [5. Operating System](#4-operating-system)
+  - [5.1. OS Definition](#41-os-definition)
+  - [5.2. OS Functions](#42-os-functions)
+  - [5.3. OS Types](#43-os-types)
+  - [5.4. OS Components](#44-os-components)
+- [6. RTOS](#5-rtos)
 - [Robot Operating System](ROS/ROS.md)
-- [6. Linux Embedded](#6-linux-embedded)
+- [7. Linux Embedded](#6-linux-embedded)
 - [Available soon](#undistributed) 
 
 # Introduce
@@ -70,6 +89,8 @@ type-qualifier(s) type-modifier data-type variable-name = initial-value; \
 * **uninitialized data**: global variables, static variables uninitialized or initialized to 0
 * **heap**: dynamic memory allocation (forget deallocation cause **Memory leak**)
 * **stack**: automatic variable storage, function frame (runout of *stack memory* cause **Stack overflow**)
+
+**Notice**: memory layout in C is not memory layout in computer, this will be discussed in Operating Systems part
 
 ## 1.4. Volatile keyword
 **volatile**: used to indicate to the compiler that a variable's value may change unexpectedly \
@@ -125,6 +146,14 @@ The worst case is the function is too short that is shorter than *prologue*/*epi
 ## 1.12. Inline Function
 **inline** is used to define a macro-like function, meaning that the function's instructions will be replaced directly to its invoke in *preprocessor* step \
 This helps improve speed but paying by program size
+
+## 1.13. Dynamic Memory Allocation
+As discuss in [**1.3. Memory Layout**](#13-memory-layout) there is a memory layer for *dynamic memory allocation* called heap. So how we manage *dynamic memory allocation* \
+There are some keyworks to manage dynamic memory
+* **malloc**: dynamically allocates a single large block of memory, returns *void* pointer and has the default garbage value initially. **Syntax**: `ptr = (data-type*)malloc(byte-size)`
+* **calloc** like *malloc* but has some diffirences: dynamically allocates the number of blocks of memory, blocks initialized with default value 0. **Syntax**: `ptr = (data-type*)calloc(size, element-size)`
+* **realloc**: dynamically change the memory allocation of a previously allocated memory, maintains the already present value and new blocks will be initialized with the default garbage value. **Syntax**: `ptr = realloc(ptr, new byte-size)`
+* **free**: dynamically de-allocate the memory. **Syntax**: `free(ptr)`
 
 # 2. Computer Architect
 
@@ -183,34 +212,15 @@ This part will be added later
 ### Stay tuned !
 This part will be added later
 
-# 4. Operating System
-
-## Stay tuned !
-
-# 5. RTOS
-
-## Stay tuned !
-
-# 6. Linux Embedded
-
-## Stay tuned !
-
-# Undistributed
-
-These parts will be completed or distributed soon
-
-## Protocol & Interface
-`protocol` is a set of rules for devices to communicate with others as *preamble*, *data length*, *conditions*, *crc*, ... and they need to be agreed by all devices \
-`interface` is the way devices connect to others as wires, radio waves, ... \
-A *protocol* usually come together with that *protocol's interface* so there are many people have ambiguous between *protocol* and *interface* 
+# 4. Micro-controller
 
 ## GPIO
 **General-Purpose Input/Output Ports**  handles both incoming and outgoing digital signal \
 They can be *INPUT* or *OUTPUT*, *LOW* or *HIGH* \
 Also, they can be configurated for other functions, called *alternate function* \
 `Pull-up resistor` is pulled *HIGH* the GPIO when the button is not pressed and pulled *LOW* the GPIO when the button is pressed \
-`Pull-down resistor` is the opposite \
-`Open-drain` make the GPIO can only be *LOW* or *floating*, so we have to use external pull-up resistor.
+`Pull-down resistor` is the opposite to *pull-up* \
+`Open-drain` make the GPIO can only be *LOW* or *floating*, so we have to use external *pull-up* resistor.
 
 ## Interrupt
 
@@ -226,11 +236,25 @@ Also, they can be configurated for other functions, called *alternate function* 
 ## PWM
 **Pulse Width Modulation**
 
+## Protocol & Interface
+A *protocol* usually come together with that *protocol's interface* so there are many people have ambiguous between *protocol* and *interface*. So, how are they different ? \
+`protocol` is a set of rules for devices to communicate with others as *preamble*, *data length*, *conditions*, *crc*, ... and they need to be agreed by all devices \
+`interface` is the way devices connect to others as wires, radio waves, ... 
+
+## Some Couple Term In Protocols
+**Synchronous** and **Asynchronous**: these are two important term in communication, they imply to *clock*. *Synchronous transmissions* are synchronized by an *clock* and *asynchronous transmissions* are not \
+**Wire** and **Wireless**: just *wire* and *wireless* \
+**Serial** and **Parallel**: data transmission *serial* or *parallel* (*e.g.* one wire or multi wires) \
+**Simplex**, **Half-duplex** and **Full-duplex**: in simplex mode the signal is sent in one direction (only one device can sent data), in half-duplex the signal is sent in both directions but one at a time, in full-duplex signal is sent in both diretions at the same time \
+**Master** and **Slave**: *master* will be the *clock* controller \
+**Server** and **Client**: *client* is requester and *server* serves
+
 ## USART
 **Universal Synchronous/Asynchronous Receiver-Transmitter** protocol:
 * Simplex, Half-duplex, Full-duplex
-* Single Master - Single Slave
+* Single Master - Single Slave (in UART there is not master and slave, both devices peer)
 
+UART is asynchronous and USART is synchronous, their name said about it \
 In UART there are some definitions that must be the same on devices:
 * Baudrate: tranceive data rate
 * Start bit
@@ -238,7 +262,6 @@ In UART there are some definitions that must be the same on devices:
 * Data frame length: it can be 5, 6, 7 or 8 (even 9 when don't use parity bit)
 * Parity bit: used to check data correction. When parity bit = 0 number of bit 1 must be even and when parity bit = 1 number of bit 1 must be odd unless the data is wrong
 
-UART interface is this RX to other TX and this TX to other RX \
 I have never used USART so I don't have information about it exclude it is synchronous \
 In addition, there is another mode called Multiprocessor UART, maybe I will add it later
 
@@ -260,18 +283,26 @@ In addition, there is another mode called Multiprocessor UART, maybe I will add 
 
 ## WiFi
 
+
 ## Bluetooth
+
 
 ## MQTT
 
+
 ## DMA
+Direct Memory Access
 
 ## Bootloader
 
-## OS Definition
+
+
+# 5. Operating System
+
+## 5.1. OS Definition
 **Operating System** is software or it can be seem as the intermediate between user and hardware that runs on a computing device and manages the hardware and software components that make up a functional computing system 
 
-## OS function
+## 5.2. OS Functions
 Hardware management \
 Provide interface for users \
 Application installation \
@@ -283,7 +314,7 @@ Resource management \
 Access control and protect system \
 Integrity maintenance, error control and recovery
 
-## OS types
+## 5.3. OS Types
 Base on processing:
 * Uniprogramming OS
 * Multiprogramming OS
@@ -292,7 +323,7 @@ Base on processing:
 * Clustered/distributed/loosely-coupled  OS
 * RTOS
 
-## OS components
+## 5.4. OS Components
 Process/thread management \
 Primary memory management \
 File management \
@@ -301,18 +332,25 @@ Secondary memory management \
 Protect system \
 Command line interpreter system 
 
+# 6. RTOS
+
+## Stay tuned !
+
+# 7. Linux Embedded
+
+## Stay tuned !
+
+# Undistributed
+
+These parts will be completed or distributed soon
+
+
+
+
+
+## Scheduling
 <!-- 
-  - [GPIO](#gpio)
-  - [Interrupt](#interrupt)
-  - [ADC & DAC](#adc--dac)
-  - [PWM](#pwm)
-  - [USART](#usart)
-  - [I2C](#i2c)
-  - [SPI](#spi)
-  - [CAN](#can)
-  - [WiFi](#wifi)
-  - [Bluetooth](#bluetooth)
-  - [MQTT](#mqtt)
+  
 -->
 
 <br> [<kbd> <br> FEEDBACK <br> </kbd>][FEEDBACK] 
