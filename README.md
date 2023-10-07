@@ -151,7 +151,7 @@ This helps improve speed but paying by program size
 As discuss in [**1.3. Memory Layout**](#13-memory-layout) there is a memory layer for *dynamic memory allocation* called heap. So how we manage *dynamic memory allocation* \
 There are some keyworks to manage dynamic memory
 * **malloc**: dynamically allocates a single large block of memory, returns *void* pointer and has the default garbage value initially. **Syntax**: `ptr = (data-type*)malloc(byte-size)`
-* **calloc** like *malloc* but has some diffirences: dynamically allocates the number of blocks of memory, blocks initialized with default value 0. **Syntax**: `ptr = (data-type*)calloc(size, element-size)`
+* **calloc** like *malloc* but has some differences: dynamically allocates the number of blocks of memory, blocks initialized with default value 0. **Syntax**: `ptr = (data-type*)calloc(size, element-size)`
 * **realloc**: dynamically change the memory allocation of a previously allocated memory, maintains the already present value and new blocks will be initialized with the default garbage value. **Syntax**: `ptr = realloc(ptr, new byte-size)`
 * **free**: dynamically de-allocate the memory. **Syntax**: `free(ptr)`
 
@@ -256,7 +256,7 @@ A *protocol* usually come together with that *protocol's interface* so there are
 
 UART is asynchronous and USART is synchronous, their name said about it \
 In UART there are some definitions that must be the same on devices:
-* Baudrate: tranceive data rate
+* Baudrate: transceive data rate
 * Start bit
 * Stop bit
 * Data frame length: it can be 5, 6, 7 or 8 (even 9 when don't use parity bit)
