@@ -2,6 +2,10 @@
 title: Template
 description: Template description
 ---
+<head>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
 <br> [<kbd> <br> HOME <br> </kbd>][HOME] <br>
 
 <br> [<kbd> <br> PREVIOUS <br> </kbd>][PREVIOUS] 
@@ -13,17 +17,6 @@ description: Template description
 <br> [<kbd> <br> FACEBOOK <br> </kbd>][FACEBOOK] 
  [<kbd> <br> LINKEDIN <br> </kbd>][LINKEDIN]
  [<kbd> <br> TWITTER <br> </kbd>][TWITTER] <br>
-
-<!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-<a class="a2a_button_facebook"></a>
-<a class="a2a_button_linkedin"></a>
-<a class="a2a_button_twitter"></a>
-<a class="a2a_button_skype"></a>
-</div>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->
 
 [HOME]: ../README.md
 [PREVIOUS]: ../README.md
