@@ -19,7 +19,7 @@ We make this notebook just for fun, mainly for each know the other's knowledge t
 
 Also, cannot forget our "genius" idol who give us self-depreciation to learn more
 * [Mr. Shun](https://cppdeveloper.com/)
-* [Mr. 稚晖君](https://www.youtube.com/@user-ow7ej5ss7j)
+* [Mr. Zhihui Jun](https://www.youtube.com/@user-ow7ej5ss7j)
 
 # Mike
 My name is Ta Dien Minh Tri. I am a 4th-year student at the University of Information Technology faculty of Computer Engineering and a firmware intern at Combros Technology Co, LTD.
