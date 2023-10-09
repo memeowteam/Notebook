@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Embedded Notebook | Notebook</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Embedded Notebook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mike and Johnny’s notebook" />
+<meta property="og:description" content="Mike and Johnny’s notebook" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Notebook" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Embedded Notebook" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Mike and Johnny’s notebook","headline":"Embedded Notebook","name":"Notebook","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=a562950e242326e159b1b6d1805530f44fa68cd4">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- end custom head snippets -->
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Embedded Notebook</h1>
+      <h2 class="project-tagline">Mike and Johnny's notebook</h2>
+      
+        <a href="https://github.com/memeowteam/eBook" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="embedded-notebook">Embedded Notebook</h1>
+<p>Nothing, just Mike and Johnny’s notebook</p>
+
+<p><br /> <a href="/about-us/about-us.html"><kbd> <br /> ABOUT US <br /> </kbd></a><br /></p>
+
+<h1 id="some-words-about-this-notebook">Some Words About This Notebook</h1>
+<h2 id="because-two-people-are-contributing-to-this-notebook-there-are-differences-in-styles">Because two people are contributing to this notebook, there are differences in styles</h2>
+<p><strong>Mike’s articles</strong> written as if you have already known the basic and the knowledge only remind but not clearly for you to understand from zero</p>
+<h2 id="some-huge-parts-will-be-separated-to-another-files">Some huge parts will be separated to another files</h2>
+<p><strong>C++</strong> <br />
+<strong>Python</strong> <br />
+<strong>Robot Operating System</strong></p>
+<h2 id="we-are-not-familiar-with-web-applications-so-our-github-webpage-is-for-fun-our-main-target-is-knowledge">We are not familiar with web applications so our GitHub Webpage is for fun, our main target is knowledge</h2>
+
+<h1 id="table-of-contents">Table of contents</h1>
+<ul>
+  <li><a href="#table-of-contents">Table of contents</a></li>
+  <li><a href="#some-words-about-this-notebook">Some Words About This Notebook</a></li>
+  <li><a href="#1-c">1. C</a>
+    <ul>
+      <li><a href="#11-c-keywords">1.1. C keywords</a></li>
+      <li><a href="#12-variables-declaration">1.2. Variables declaration</a></li>
+      <li><a href="#13-memory-layout">1.3. Memory Layout</a></li>
+      <li><a href="#14-volatile-keyword">1.4. Volatile keyword</a></li>
+      <li><a href="#15-pointer">1.5. Pointer</a></li>
+      <li><a href="#16-function-pointer">1.6. Function pointer</a></li>
+      <li><a href="#17-struct--union--enum">1.7. Struct &amp; Union &amp; Enum</a></li>
+      <li><a href="#18-extern--static">1.8. Extern &amp; Static</a></li>
+      <li><a href="#19-compilation-model">1.9. Compilation Model</a></li>
+      <li><a href="#110-static--dynamic-library">1.10. Static &amp; Dynamic Library</a></li>
+      <li><a href="#111-function-invoker">1.11. Function Invoker</a></li>
+      <li><a href="#112-inline-function">1.12. Inline Function</a></li>
+      <li><a href="#113-dynamic-memory-allocation">1.13. Dynamic Memory Allocation</a></li>
+    </ul>
+  </li>
+  <li><a href="/C++/C++.html">C++</a></li>
+  <li><a href="/Python/Python.html">Python</a></li>
+  <li><a href="#2-computer-architect">2. Computer Architect</a>
+    <ul>
+      <li><a href="#21-von-neumann--harvard">2.1. Von Neumann &amp; Harvard</a></li>
+      <li><a href="#22-little-endian--big-endian">2.2. Little endian &amp; Big endian</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-embedded">3. Embedded</a>
+    <ul>
+      <li><a href="#31-digital--analog">3.1. Digital &amp; Analog</a></li>
+      <li><a href="#32-embedded-systems">3.2. Embedded Systems</a></li>
+      <li><a href="#33-cypher-physical-systems">3.3. Cypher-Physical Systems</a></li>
+      <li><a href="#34-sensors--actuators">3.4. Sensors &amp; Actuators</a></li>
+      <li><a href="#35-internet-of-things">3.5. Internet of Things</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-micro-controller">4. Micro-controller</a>
+    <ul>
+      <li><a href="#gpio">GPIO</a></li>
+      <li><a href="#interrupt">Interrupt</a></li>
+      <li><a href="#adc--dac">ADC &amp; DAC</a></li>
+      <li><a href="#pwm">PWM</a></li>
+      <li><a href="#protocol--interface">Protocol &amp; Interface</a></li>
+      <li><a href="#some-couple-term-in-protocols">Some Couple Term In Protocols</a></li>
+      <li><a href="#usart">USART</a></li>
+      <li><a href="#i2c">I2C</a></li>
+      <li><a href="#spi">SPI</a></li>
+      <li><a href="#can">CAN</a></li>
+      <li><a href="#wifi">WiFi</a></li>
+      <li><a href="#bluetooth">Bluetooth</a></li>
+      <li><a href="#mqtt">MQTT</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-operating-system">5. Operating System</a>
+    <ul>
+      <li><a href="#41-os-definition">5.1. OS Definition</a></li>
+      <li><a href="#42-os-functions">5.2. OS Functions</a></li>
+      <li><a href="#43-os-types">5.3. OS Types</a></li>
+      <li><a href="#44-os-components">5.4. OS Components</a></li>
+    </ul>
+  </li>
+  <li><a href="#5-rtos">6. RTOS</a></li>
+  <li><a href="/ROS/ROS.html">Robot Operating System</a></li>
+  <li><a href="#6-linux-embedded">7. Linux Embedded</a></li>
+  <li><a href="#undistributed">Available soon</a></li>
+</ul>
+
+<h1 id="1-c">1. C</h1>
+
+<h2 id="11-c-keywords">1.1. C keywords</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">auto</th>
+      <th style="text-align: center">double</th>
+      <th style="text-align: center">int</th>
+      <th style="text-align: center">struct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>break</strong></td>
+      <td style="text-align: center"><strong>else</strong></td>
+      <td style="text-align: center"><strong>long</strong></td>
+      <td style="text-align: center"><strong>switch</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>case</strong></td>
+      <td style="text-align: center"><strong>enum</strong></td>
+      <td style="text-align: center"><strong>register</strong></td>
+      <td style="text-align: center"><strong>typedef</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>char</strong></td>
+      <td style="text-align: center"><strong>extern</strong></td>
+      <td style="text-align: center"><strong>return</strong></td>
+      <td style="text-align: center"><strong>union</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>continue</strong></td>
+      <td style="text-align: center"><strong>for</strong></td>
+      <td style="text-align: center"><strong>signed</strong></td>
+      <td style="text-align: center"><strong>void</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>do</strong></td>
+      <td style="text-align: center"><strong>if</strong></td>
+      <td style="text-align: center"><strong>static</strong></td>
+      <td style="text-align: center"><strong>while</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>default</strong></td>
+      <td style="text-align: center"><strong>goto</strong></td>
+      <td style="text-align: center"><strong>sizeof</strong></td>
+      <td style="text-align: center"><strong>volatile</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>const</strong></td>
+      <td style="text-align: center"><strong>float</strong></td>
+      <td style="text-align: center"><strong>short</strong></td>
+      <td style="text-align: center"><strong>unsigned</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="12-variables-declaration">1.2. Variables declaration</h2>
+<p><em>type-qualifier(s) type-modifier data-type variable-name = initial-value;</em> <br />
+<code class="language-plaintext highlighter-rouge">type-qualifier</code>: <em>const, volatile, restrict</em> <br />
+<code class="language-plaintext highlighter-rouge">type-modifier</code>: <em>short, long, unsigned, signed</em> <br />
+<code class="language-plaintext highlighter-rouge">data-type</code>: <em>integer (int), floating point (double, float), enumerated, derived (array, struct, union, pointer), void</em></p>
+
+<h2 id="13-memory-layout">1.3. Memory Layout</h2>
+<p><strong>Memory layout</strong> from low to high addresses in C includes:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Text Segment</code> (code segment): executable instructions - sharable &amp; read-only</li>
+  <li><strong>initialized data</strong>: global variables, static variables initialized (declared $\neq$ 0)</li>
+  <li><strong>uninitialized data</strong>: global variables, static variables uninitialized or initialized to 0</li>
+  <li><strong>heap</strong>: dynamic memory allocation (forget deallocation cause <strong>Memory leak</strong>)</li>
+  <li><strong>stack</strong>: automatic variable storage, function frame (runout of <em>stack memory</em> cause <strong>Stack overflow</strong>)</li>
+</ul>
+
+<p><strong>Notice</strong>: memory layout in C is not memory layout in computer, this will be discussed in Operating Systems part</p>
+
+<h2 id="14-volatile-keyword">1.4. Volatile keyword</h2>
+<p><strong>volatile</strong>: used to indicate to the compiler that a variable’s value may change unexpectedly <br />
+<em>volatile</em> is usually used when you turn on compiler’s optimization function</p>
+<ul>
+  <li>Peripheral register mapping to memory</li>
+  <li>Interrupt Service Routines (ISRs)</li>
+  <li>Multi-thread applications
+<strong>const volatile</strong>: same as volatile but you can’t change its value by the code</li>
+</ul>
+
+<h2 id="15-pointer">1.5. Pointer:</h2>
+<p><strong>pointer</strong> is variables that hold address <br />
+<em>pointer</em> point to any type have same size <br />
+In C, we don’t have reference parameter so we can use <em>pointer</em> to substitute</p>
+
+<h2 id="16-function-pointer">1.6. Function pointer:</h2>
+<p><strong>function pointer</strong> is a pointer to const because function address place on <em>code segment</em> which is <em>read-only</em> <br />
+<em>syntax</em>: data-type (*function-name)(parameter) <br />
+e.g. <code class="language-plaintext highlighter-rouge">void (*pointer_function)()</code>: pointer function point to a function with no parameter and return void</p>
+
+<h2 id="17-struct--union--enum">1.7. Struct &amp; Union &amp; Enum</h2>
+<p><strong>struct</strong>, <strong>union</strong> and <strong>enum</strong> are user-define data types <br />
+<strong>struct</strong> is used to group related variables (members) into one<br />
+<code class="language-plaintext highlighter-rouge">struct in C</code> need to use <em>typedef</em> to don’t use <em>struct</em> keyword whenever declare a new <em>struct variable</em>. In C++, it is not necessary <br />
+<strong>union</strong> allows to store different data types to same memory     <br />
+<strong>enum</strong> is usually used to assign name to integral constants <br />
+<code class="language-plaintext highlighter-rouge">data structure alignment</code> is the term that means compiler “padding” into space between 2 data “naturally aligned”, this mechanism help compiler better performance. We should arrange data in <em>struct</em> reasonable to optimize memory and performance</p>
+
+<h2 id="18-extern--static">1.8. Extern &amp; Static</h2>
+<p><strong>extern</strong> is used to notify to the compiler that variable is memory allocated and don’t need to allocate again, it is usually used in multi-source file projects <br />
+<strong>static</strong> have 2 meaning:</p>
+<ul>
+  <li>If a variable is declared as global, that variable is only used in that file (multi-source file projects)</li>
+  <li>Else if that variable is declared as local in a function (or a class in C++), that variable is memory allocated once until the program ends meaning that the variable will not be destroyed when the function call ends so it will use its last “state” when the function called again</li>
+</ul>
+
+<h2 id="19-compilation-model">1.9. Compilation Model</h2>
+<p><strong>Preprocessing</strong>: <em>preprocessor</em> will replace preprocessor directives (#) <br />
+<strong>Compiling</strong>: <em>compiler</em> will compile code to assembly code (.s/.asm) <br />
+<strong>Assembling</strong>: <em>assembler</em> will change assembly code to machine code in object code files(.o) <br />
+<strong>Linking</strong>: <em>linker</em> will link object code files together to <em>shared library</em> or <em>executable file</em> <br />
+A little bit about <em>preprocessing</em> and <em>linking</em>: <em>preprocessing</em> replaces header file (.h) but it usually only contains declarations not definitions and the <em>linking</em> link the definitions to these declarations</p>
+
+<h2 id="110-static--shared-library">1.10. Static &amp; Shared Library</h2>
+<p><strong>Static library</strong> is linked in compile time <br />
+<strong>Shared/Dynamic library</strong> is linked in run time</p>
+
+<h2 id="111-function-invoker">1.11. Function Invoker</h2>
+<p>When you invoke a function, there are 2 important additional parts called <strong>prologue</strong> and <strong>epilogue</strong> <br />
+<code class="language-plaintext highlighter-rouge">prologue</code> is the concealed code run before the function is invoked, it is responsible to take the function’s parameter to save to <em>stack</em> <br />
+<code class="language-plaintext highlighter-rouge">epilogue</code> is the concealed code run after the function is invoked, it is responsible for returning the function’s result to the function invoker and removing the parameter saved to <em>stack</em> <br />
+<em>function</em>, <em>prologue</em> and <em>epilogue</em> take the same memory size no matter how many times the function is invoked which means the more you call the function, the more memory is saved <br />
+But there is a paradox in programming that the advantage in memory comes with the disadvantage in speed <br />
+The worst case is the function is too short that is shorter than <em>prologue</em>/<em>epilogue</em></p>
+
+<h2 id="112-inline-function">1.12. Inline Function</h2>
+<p><strong>inline</strong> is used to define a macro-like function, meaning that the function’s instructions will be replaced directly to its invoke in <em>preprocessor</em> step <br />
+This helps improve speed but paying by program size</p>
+
+<h2 id="113-dynamic-memory-allocation">1.13. Dynamic Memory Allocation</h2>
+<p>As discuss in <a href="#13-memory-layout"><strong>1.3. Memory Layout</strong></a> there is a memory layer for <em>dynamic memory allocation</em> called heap. So how we manage <em>dynamic memory allocation</em> <br />
+There are some keyworks to manage dynamic memory</p>
+<ul>
+  <li><strong>malloc</strong>: dynamically allocates a single large block of memory, returns <em>void</em> pointer and has the default garbage value initially. <strong>Syntax</strong>: <code class="language-plaintext highlighter-rouge">ptr = (data-type*)malloc(byte-size)</code></li>
+  <li><strong>calloc</strong> like <em>malloc</em> but has some differences: dynamically allocates the number of blocks of memory, blocks initialized with default value 0. <strong>Syntax</strong>: <code class="language-plaintext highlighter-rouge">ptr = (data-type*)calloc(size, element-size)</code></li>
+  <li><strong>realloc</strong>: dynamically change the memory allocation of a previously allocated memory, maintains the already present value and new blocks will be initialized with the default garbage value. <strong>Syntax</strong>: <code class="language-plaintext highlighter-rouge">ptr = realloc(ptr, new byte-size)</code></li>
+  <li><strong>free</strong>: dynamically de-allocate the memory. <strong>Syntax</strong>: <code class="language-plaintext highlighter-rouge">free(ptr)</code></li>
+</ul>
+
+<h1 id="2-computer-architect">2. Computer Architect</h1>
+
+<h2 id="21-von-neumann--harvard">2.1. Von Neumann &amp; Harvard</h2>
+<p><strong>Von Neumann</strong> is the computer architect that have intercommunity bus for program memory and data memory <br />
+<strong>Harvard</strong> is the opposite, so it have better performance</p>
+
+<h2 id="22-little-endian--big-endian">2.2. Little endian &amp; Big endian</h2>
+<p><strong>endian</strong> is a storage mechanism so it is opposite to our thinking <br />
+<strong>Little endian</strong> is from LSB to MSB and <strong>Big endian</strong> is the opposite</p>
+
+<h2 id="23-memory-architect">2.3. Memory Architect</h2>
+<p>There are two memory types in computer: <strong>volatile</strong> and <strong>non-volatile</strong> <br />
+<code class="language-plaintext highlighter-rouge">volatile</code> with  representation is <code class="language-plaintext highlighter-rouge">RAM</code>, also called memory, loses contents when power is off, a temporary workspace for data because it is high-speed <br />
+Some <em>volatile memory</em>:</p>
+<ul>
+  <li>SRAM or <em>static RAM</em>: fast, small capacity, high energy consumption, used for <em>caches</em></li>
+  <li>DRAM or <em>dynamic RAM</em>: slower than SRAM, higher capacity, requires periodic refresh, used for <em>main memory</em></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">non-volatile</code> with  representation is <code class="language-plaintext highlighter-rouge">ROM</code>, also called storage, preserves contents when power is off, used to store data <br />
+Some <em>non-volatile memory</em> (their name say all about them):</p>
+<ul>
+  <li>PROM or <em>programmable ROM</em> and MROM or <em>mask ROM</em></li>
+  <li>EPROM or <em>erasable programmable ROM</em></li>
+  <li>EEPROM or <em>electrically erasable programmable ROM</em></li>
+</ul>
+
+<p>There are also some additional memory types:</p>
+<ul>
+  <li>Cache: <em>SRAM</em> application</li>
+  <li>Flash: erased a “block” at a time, limited number of program/erase cycles</li>
+  <li>Bootloader: on power up, transfers data from non-volatile to volatile memory</li>
+  <li>Disk</li>
+</ul>
+
+<p>Memory component speed ordered from fastest to slowest: register, cache, main memory, non-volatile memory, hard-disk drives, optical disk, magnetic tapes</p>
+
+<h1 id="3-embedded">3. Embedded</h1>
+
+<h2 id="31-digital--analog">3.1. Digital &amp; Analog</h2>
+<p>Our world is <em>analog</em> but computer’s world is <em>digital</em> <br />
+<strong>analog</strong> refers to a continuously changing representation of a continuously variable quantity <br />
+<strong>digital</strong> refers to representing these variable quantities in terms of actual numbers, or digits <br />
+So we have to do something for computers to understand our world, there will be discuss in <a href="#adc--dac">ADC &amp; DAC</a> part</p>
+
+<h2 id="32-embedded-systems">3.2. Embedded Systems</h2>
+<p>Embedded system is computer system with a <strong>dedicated function</strong> <em>embedded</em> as a part of a complete device and have limited resources as <em>memory</em>, <em>peripheral</em>, <em>speed</em>, … <br />
+They have some features as: <em>small size</em>, <em>low per-unit cost</em>, <em>low power consumption</em>, …</p>
+
+<h2 id="33-cypher-physical-systems">3.3. Cypher-Physical Systems</h2>
+<h3 id="stay-tuned-">Stay tuned !</h3>
+<p>This part will be added later</p>
+
+<h2 id="34-sensors--actuators">3.4. Sensors &amp; Actuators</h2>
+<p><strong>Sensors</strong> are devices that measure physical quantities <br />
+<code class="language-plaintext highlighter-rouge">sensor</code> can be seem as input of a system, it responsible to <em>“read from physical world”</em> <br />
+<strong>Actuators</strong> are devices that modify physical quantities <br />
+<code class="language-plaintext highlighter-rouge">actuator</code> can be seem as output of a system, it responsible to <em>“write to physical world”</em></p>
+
+<h2 id="35-internet-of-things">3.5. Internet of Things</h2>
+<h3 id="stay-tuned--1">Stay tuned !</h3>
+<p>This part will be added later</p>
+
+<h1 id="4-micro-controller">4. Micro-controller</h1>
+
+<h2 id="micro-processor--micro-controller">Micro-processor &amp; Micro-controller</h2>
+<p><strong>Micro-processor</strong>: <br />
+<strong>Micro-controller</strong></p>
+
+<h2 id="gpio">GPIO</h2>
+<p><strong>General-Purpose Input/Output Ports</strong>  handles both incoming and outgoing digital signal <br />
+They can be <em>INPUT</em> or <em>OUTPUT</em>, <em>LOW</em> or <em>HIGH</em> <br />
+Also, they can be configurated for other functions, called <em>alternate function</em> <br />
+<code class="language-plaintext highlighter-rouge">Pull-up resistor</code> is pulled <em>HIGH</em> the GPIO when the button is not pressed and pulled <em>LOW</em> the GPIO when the button is pressed <br />
+<code class="language-plaintext highlighter-rouge">Pull-down resistor</code> is the opposite to <em>pull-up</em> <br />
+<code class="language-plaintext highlighter-rouge">Open-drain</code> make the GPIO can only be <em>LOW</em> or <em>floating</em>, so we have to use external <em>pull-up</em> resistor.</p>
+
+<h2 id="interrupt">Interrupt</h2>
+
+<h2 id="timers">Timers</h2>
+
+<h2 id="adc--dac">ADC &amp; DAC</h2>
+<p><strong>Analog to Digital Converter</strong> and <strong>Digital to Analog Converter</strong> are very important components in electronic equipments <br />
+<em>ADC</em> and <em>DAC</em> architect won’t be mention here, let’s go to their parameters</p>
+<ul>
+  <li>Reference Voltage:</li>
+  <li>Resolution:</li>
+  <li>Quantization:</li>
+</ul>
+
+<h2 id="pwm">PWM</h2>
+<p><strong>Pulse Width Modulation</strong></p>
+
+<h2 id="protocol--interface">Protocol &amp; Interface</h2>
+<p>A <em>protocol</em> usually come together with that <em>protocol’s interface</em> so there are many people have ambiguous between <em>protocol</em> and <em>interface</em>. So, how are they different ? <br />
+<code class="language-plaintext highlighter-rouge">protocol</code> is a set of rules for devices to communicate with others as <em>preamble</em>, <em>data length</em>, <em>conditions</em>, <em>crc</em>, … and they need to be agreed by all devices <br />
+<code class="language-plaintext highlighter-rouge">interface</code> is the way devices connect to others as wires, radio waves, …</p>
+
+<h2 id="some-couple-term-in-protocols">Some Couple Term In Protocols</h2>
+<p><strong>Synchronous</strong> and <strong>Asynchronous</strong>: these are two important term in communication, they imply to <em>clock</em>. <em>Synchronous transmissions</em> are synchronized by a <em>clock</em> and <em>asynchronous transmissions</em> are not <br />
+<strong>Wire</strong> and <strong>Wireless</strong>: just <em>wire</em> and <em>wireless</em> <br />
+<strong>Serial</strong> and <strong>Parallel</strong>: data transmission <em>serial</em> or <em>parallel</em> (<em>e.g.</em> one wire or multi wires) <br />
+<strong>Simplex</strong>, <strong>Half-duplex</strong> and <strong>Full-duplex</strong>: in simplex mode the signal is sent in one direction (only one device can sent data), in half-duplex the signal is sent in both directions but one at a time, in full-duplex signal is sent in both directions at the same time <br />
+<strong>Master</strong> and <strong>Slave</strong>: <em>master</em> will be the <em>clock</em> controller <br />
+<strong>Server</strong> and <strong>Client</strong>: <em>client</em> is requester and <em>server</em> serves</p>
+
+<h2 id="usart">USART</h2>
+<p><strong>Universal Synchronous/Asynchronous Receiver-Transmitter</strong> protocol:</p>
+<ul>
+  <li>Simplex, Half-duplex, Full-duplex</li>
+  <li>Single Master - Single Slave (in UART there is not master and slave, both devices peer)</li>
+</ul>
+
+<p>UART is asynchronous and USART is synchronous, their name said about it <br />
+In UART there are some definitions that must be the same on devices:</p>
+<ul>
+  <li>Baudrate: transceive data rate</li>
+  <li>Start bit</li>
+  <li>Stop bit</li>
+  <li>Data frame length: it can be 5, 6, 7 or 8 (even 9 when don’t use parity bit)</li>
+  <li>Parity bit: used to check data correction. When parity bit = 0 number of bit 1 must be even and when parity bit = 1 number of bit 1 must be odd unless the data is wrong</li>
+</ul>
+
+<p>I have never used USART so I don’t have information about it exclude it is synchronous <br />
+In addition, there is another mode called Multiprocessor UART, maybe I will add it later</p>
+
+<h2 id="i2c">I2C</h2>
+<p><strong>Inter-Integrated Circuit</strong>, also called <strong>Two Wire Interface</strong> protocol:</p>
+<ul>
+  <li>Half-duplex</li>
+  <li>Multi Master - Multi Slave</li>
+  <li>Synchronous</li>
+</ul>
+
+<h2 id="spi">SPI</h2>
+<p><strong>Serial Peripheral Interface</strong> protocol:</p>
+<ul>
+  <li>Full-duplex</li>
+  <li>Single Master - Multi Slave</li>
+  <li>Synchronous</li>
+</ul>
+
+<h2 id="can">CAN</h2>
+<p><strong>Controller Area Network</strong> protocol:</p>
+
+<h2 id="wifi">WiFi</h2>
+
+<h2 id="bluetooth">Bluetooth</h2>
+
+<h2 id="mqtt">MQTT</h2>
+
+<h2 id="dma">DMA</h2>
+<p><em>Direct Memory Access</em></p>
+
+<h2 id="bootloader">Bootloader</h2>
+
+<h1 id="5-operating-system">5. Operating System</h1>
+
+<h2 id="51-os-definition">5.1. OS Definition</h2>
+<p><strong>Operating System</strong> is software or it can be seem as the intermediate between user and hardware that runs on a computing device and manages the hardware and software components that make up a functional computing system</p>
+
+<h2 id="52-os-functions">5.2. OS Functions</h2>
+<p>Hardware management <br />
+Provide interface for users <br />
+Application installation <br />
+Connect hardware <br />
+Interaction between application and hardware <br />
+CPU scheduling <br />
+Process coordination and synchronization <br />
+Resource management <br />
+Access control and protect system <br />
+Integrity maintenance, error control and recovery</p>
+
+<h2 id="53-os-types">5.3. OS Types</h2>
+<p>Base on processing:</p>
+<ul>
+  <li>Uniprogramming OS</li>
+  <li>Multiprogramming OS</li>
+  <li>Time-sharing OS</li>
+  <li>Parallel/multiprocessor/tightly-coupled OS</li>
+  <li>Clustered/distributed/loosely-coupled  OS</li>
+  <li>RTOS</li>
+</ul>
+
+<h2 id="54-os-components">5.4. OS Components</h2>
+<p>Process/thread management <br />
+Primary memory management <br />
+File management <br />
+I/O system management <br />
+Secondary memory management <br />
+Protect system <br />
+Command line interpreter system</p>
+
+<h2 id="55-process">5.5. Process</h2>
+<p><strong>Process</strong> is the active <em>application</em> instant, <em>application</em> become <em>process</em> when <em>executable file</em> loaded into memory (called <em>process image</em>) <br />
+<strong>Process layout</strong> is as same as <a href="#13-memory-layout">Memory Layout In C Program</a> <br />
+<strong>Process initialization step</strong>: allocate identifier, allocate memory for process load, initialize <em>Process Control Block</em> (PCB), setup necessary relation (e.g. arrange PCB to queue) <br />
+<strong>PCB</strong> is one of the most important data structure in OS to manage and control the execution of processes, it typically contains the following components:</p>
+<ul>
+  <li><strong><em>Process ID</em></strong> (PID): unique identifier assigned to each process by the operating system</li>
+  <li><strong><em>Program counter</em></strong> (PC): address of the next instruction to be executed by the process</li>
+  <li><strong><em>Process state</em></strong>: current state of the process, includes new, ready, running, waiting, terminated, suspended</li>
+  <li><strong><em>CPU registers</em></strong>: values of the processor registers that are being used by the process</li>
+  <li><strong><em>Memory management information</em></strong>: information about the process’s memory allocation, such as the base and limit registers</li>
+  <li><strong><em>I/O status information</em></strong>: information about the process’s I/O operations, such as open files and network connections</li>
+  <li><strong><em>Accounting information</em></strong>: information about the resources used by the process, such as CPU time and memory usage</li>
+  <li><strong><em>CPU scheduling information</em></strong>: information about the process’s priority and scheduling requirements</li>
+</ul>
+
+<p><strong>Thread</strong> is a segment of a process or a lightweight process, threads share memory, data, resources together <br />
+There are 3 <em>thread mapping model</em></p>
+<ul>
+  <li>Multi user thread mapping to single kernel thread: any user thread blocked cause all user thread blocked, user threads can’t run parallel because only one user thread can use kernel at one time</li>
+  <li>Single user thread mapping to single kernel thread: create a user thread also create a kernel thread, better concurrency because any user thread blocked don’t affect to other threads, limited number of threads</li>
+  <li>Multi user thread mapping to multi kernel threads: solve the disavantages of the two below but hard to setting</li>
+</ul>
+
+<h2 id="os-scheduling">OS Scheduling</h2>
+<p><strong>Scheduling in OS</strong> is <strong>process scheduling</strong> with PCB: <em>process scheduling</em> is a crucial function in OS and PCB in OS plays a vital role in this function <br />
+<strong>Scheduler</strong> include several types:</p>
+<ul>
+  <li><strong>Long-term scheduler</strong> used to schedule <em>job</em> (or <em>process</em>), decide which program accepted to load into system to run, control system’s multiprogramming, maintain both CPU-bound and I/O-bound process</li>
+  <li><strong>Short-term scheduler</strong> used to schedule CPU, decide which process in ready queue will take CPU to run next, trigger events: clock interrupt, I/O interrupt, OS call, signal, …</li>
+  <li><strong>Mid-term scheduler</strong> (in time-sharing system) used to adjust system’s multiprogramming (swap in - move process from memory to disk and swap out - move process from disk to memory)
+<em>Scheduler</em> will change the CPU control permit for the choosen process, includes:</li>
+  <li>Context change</li>
+  <li>User mode change</li>
+  <li>Jump to the position in process to running proccess again
+<em>Scheduling</em> cause time consumption called dispatch latency, time that scheduler stop current process and start another process
+<strong>Scheduling criteria</strong></li>
+  <li>User-oriented: response time - time since process receive request to first request is responsed (time-sharing, interactive system) minimum, turnaround time: time since process loaded into system to process terminated minimum, waiting time: sum of process waiting time in ready queue minumum</li>
+  <li>System-oriented: process utilization - schedule to make the CPU busiest maximum, fairness - all process treated peer, throughput - number of done process in a time maximum
+<strong>Scheduling features</strong></li>
+  <li>Selection function: used to choose which process in ready queue run usually based on priority, resources request, process</li>
+  <li>Desicion mode: used to choose time to choose selection function for scheduling, there are two desicion mode: non-preemptive - when running process will run until end or blocked by I/O request and preemtive - running process can be interrupt to ready state, more cost but more better response time because no case that a process take CPU too long
+<strong>service time</strong> is the time process need CPU in a CPU-I/O period, processes have large service time are CPU-bound processes</li>
+</ul>
+
+<h2 id="scheduling-algorimth">Scheduling algorimth</h2>
+
+<h1 id="6-rtos">6. RTOS</h1>
+
+<h2 id="stay-tuned--2">Stay tuned !</h2>
+
+<h1 id="7-linux-embedded">7. Linux Embedded</h1>
+
+<h2 id="stay-tuned--3">Stay tuned !</h2>
+
+<h1 id="undistributed">Undistributed</h1>
+
+<p>These parts will be completed or distributed soon</p>
+
+<p><br /> <a href="https://github.com/memeowteam/Notebook/discussions"><kbd> <br /> FEEDBACK <br /> </kbd></a> 
+ <a href="mailto:memeowteam@gmail.com"><kbd> <br /> EMAIL <br /> </kbd></a> <br /></p>
+
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/memeowteam/eBook">eBook</a> is maintained by <a href="https://github.com/memeowteam">memeowteam</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

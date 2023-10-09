@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Object Oriented Programming (OOP) C++ | Notebook</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Object Oriented Programming (OOP) C++" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mike and Johnny’s notebook" />
+<meta property="og:description" content="Mike and Johnny’s notebook" />
+<link rel="canonical" href="http://localhost:4000/about-us/Johnny/OOP.html" />
+<meta property="og:url" content="http://localhost:4000/about-us/Johnny/OOP.html" />
+<meta property="og:site_name" content="Notebook" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Object Oriented Programming (OOP) C++" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Mike and Johnny’s notebook","headline":"Object Oriented Programming (OOP) C++","url":"http://localhost:4000/about-us/Johnny/OOP.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=a562950e242326e159b1b6d1805530f44fa68cd4">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- end custom head snippets -->
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Object Oriented Programming (OOP) C++</h1>
+      <h2 class="project-tagline">Mike and Johnny's notebook</h2>
+      
+        <a href="https://github.com/memeowteam/eBook" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="object-oriented-programming-oop-c">Object Oriented Programming (OOP) C++</h1>
+<h1 id="table-of-content">Table of content</h1>
+
+<h2 id="class-keyword">Class keyword</h2>
+<p>The most remarkable feature of C++ is <code class="language-plaintext highlighter-rouge">class</code>. Class binds together data and methods that work on data. So <code class="language-plaintext highlighter-rouge">class</code> is an abstract data type (ADT). The creation of class simply creates a template.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class class_name {
+    public: 
+        data &amp; function; 
+    private: 
+        data &amp; function; 
+    protected: 
+        data &amp; function; 
+}; &lt;-- `the class declaration must end with a semicolon`
+</code></pre></div></div>
+<h2 id="data-and-functions-mode">Data and functions mode</h2>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">public</code>: Data members and functions declared under the public mode can be used inside and outside the class.</li>
+  <li><code class="language-plaintext highlighter-rouge">Protected</code>: Data member and functions can be used inside the class. The child class which inherit from this class also can access to the data and functions member which are specified as protected.</li>
+  <li><code class="language-plaintext highlighter-rouge">Private</code>: Data member and functions can only be used inside a class.
+    <ul>
+      <li>Private member data can be accessed by member function!</li>
+    </ul>
+  </li>
+  <li><em>By default, all member data and functions are private!</em>
+    <h2 id="write-source-code-for-a-function-of-a-class">Write source code for a function of a class</h2>
+  </li>
+  <li>Access to the public member function using <code class="language-plaintext highlighter-rouge">::</code> operator.</li>
+  <li>Example:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class demo {
+  private:
+      int cx, cy;
+  public:
+      void input_data(int,int);
+};
+Type Class   Function name
+|    |       |
+void demo::input_data(int x,int y)
+{
+  cx = x;
+  cy = y;
+}
+void main( )
+{
+  demo d1;              // Object instance
+  d1.input_data(10,40); // Call member function of instance d1
+  getch();              // Wait key press
+}
+</code></pre></div>    </div>
+    <h2 id="array-of-object">Array of Object</h2>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">class_name</code> <em>array[number_elements]</em>
+    <h2 id="passing-and-returning-an-object">Passing and returning an Object</h2>
+  </li>
+  <li>Object can be passed to and returned from a function just like a primitive data type.</li>
+  <li>Example:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class demo {
+  int num;
+  public:
+      void input(int x) {
+          num=x;
+      }
+      void copy(demo);
+      void show( ) {
+          cout&lt;&lt;“num=”&lt;&lt;num&lt;&lt;endl;
+      }
+};
+void demo::copy (demo d) {
+  num=d.num; // Passing a whole Object 
+}
+void main() {
+  demo d1,d2;
+  d1.input(20);
+  d2.copy(d1);
+  cout&lt;&lt;“Object d1\n”&lt;&lt;endl;
+  d1.show( );
+  cout&lt;&lt;“Object d2\n”;
+  d2.show( );
+  getch( );
+}
+</code></pre></div>    </div>
+    <h2 id="friend-function">Friend function</h2>
+  </li>
+  <li><em>Keyword</em>: <code class="language-plaintext highlighter-rouge">friend</code></li>
+  <li>Make a function as friend of a class and allow that friend function to access protected and private data of that class.</li>
+  <li>Friend functions are mostly used where two or more classes want to share a common function</li>
+  <li>Call a friend function:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">class_name</code>.<em>friend_function</em></li>
+    </ul>
+  </li>
+  <li>Declaration:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class demo
+{
+  // friend function declaration
+  friend data_type function_name (parameters);
+};
+data_type function_name (parameters)
+//definition
+{
+  function definition;
+}
+</code></pre></div>    </div>
+  </li>
+  <li>Call friend function
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>demo.function_name(parameters);
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/memeowteam/eBook">eBook</a> is maintained by <a href="https://github.com/memeowteam">memeowteam</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
